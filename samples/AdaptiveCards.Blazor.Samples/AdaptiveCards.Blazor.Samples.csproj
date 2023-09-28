@@ -1,18 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\codeBlockJsInterop.js" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\src\Blazor.AdaptiveCards\AdaptiveCards.Blazor.csproj" />
-    <PackageReference Include="BlazorStrap" Version="1.1.101"></PackageReference>
+    <PackageReference Include="BlazorStrap" Version="1.1.101">
+    </PackageReference>
   </ItemGroup>
-
   <ItemGroup>
     <Content Update="wwwroot\popper.min.js">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
@@ -23,5 +20,4 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
   </ItemGroup>
-
 </Project>
